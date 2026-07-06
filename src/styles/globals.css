@@ -1,0 +1,32 @@
+/* En tu archivo globals.css o index.css */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  overflow-x: hidden;
+  width: 100%;
+  max-width: 100vw;
+  position: relative;
+}
+
+/* Previene que cualquier elemento cause overflow horizontal */
+img,
+svg,
+video,
+canvas,
+iframe,
+embed,
+object {
+  display: block;
+  max-width: 100%;
+}
+
+/* Asegura que todos los contenedores respeten el ancho */
+.container,
+.max-w-* {
+  max-width: 100% !important;
+}
